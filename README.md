@@ -54,8 +54,23 @@ The base URL for all API endpoints is: `http://localhost:3000`
 
 ### Setting Up the Backend
 
-1. Clone the repository: `git clone https://github.com/your/repo.git`
-2. Navigate to the backend directory: `cd repo/backend`
+- Create a new database 
+CREATE DATABASE flight_app;
+
+- Create a new user and grant privileges
+CREATE USER 'flight_user'@'localhost' IDENTIFIED BY 'password';
+GRANT ALL PRIVILEGES ON flight_app.* TO 'flight_user'@'localhost';
+FLUSH PRIVILEGES;
+
+- Install MySQL Package: 
+`npm install mysql`
+
+- open up `app.js` and change the database configuration
+
+
+
+1. Clone the repository: `https://github.com/4riful/Airline-Management-System.git`
+2. Navigate to the backend directory: `cd /Airline-Management-System/backend`
 3. Install the required dependencies: `npm install`
 4. Start the server: `npm start`
 
@@ -65,8 +80,8 @@ The frontend application provides a user-friendly interface to interact with the
 
 ### Setting Up the Frontend
 
-1. Clone the repository: `git clone https://github.com/your/repo.git`
-2. Navigate to the frontend directory: `cd repo/frontend`
+1. Clone the repository: `https://github.com/4riful/Airline-Management-System.git`
+2. Navigate to the frontend directory: `cd /Airline-Management-Systemfrontend`
 3. Open `index.html` in a web browser to access the application.
 
 ## Contributing
