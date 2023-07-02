@@ -82,7 +82,7 @@ The frontend application provides a user-friendly interface to interact with the
 
 1. Clone the repository: `https://github.com/4riful/Airline-Management-System.git`
 2. Navigate to the frontend directory: `cd /Airline-Management-Systemfrontend`
-3. Open `index.html` in a web browser to access the application.
+3. Start a server for frontend `python -m http.server 8080`
 
 ## Contributing
 
