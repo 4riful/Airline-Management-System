@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flight Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<script src="script.js"></script>
+<script src="handlers.js"></script>
+<body>
+  <header>
+    <h1>Welcome to Flight Management System</h1>
+  </header>
+
+  <section>
+    <h2>Add a Flight</h2>
+    <form id="flight-form">
+      <div class="form-row">
+        <div class="form-group">
+          <label for="airline">Airline:</label>
+          <input type="text" id="airline" name="airline" required>
+        </div>
+        <div class="form-group">
+          <label for="flightNumber">Flight Number:</label>
+          <input type="text" id="flightNumber" name="flightNumber" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="origin">Origin:</label>
+          <input type="text" id="origin" name="origin" required>
+        </div>
+        <div class="form-group">
+          <label for="destination">Destination:</label>
+          <input type="text" id="destination" name="destination" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="departureTime">Departure Time:</label>
+          <input type="datetime-local" id="departureTime" name="departureTime" required>
+        </div>
+        <div class="form-group">
+          <label for="arrivalTime">Arrival Time:</label>
+          <input type="datetime-local" id="arrivalTime" name="arrivalTime" required>
+        </div>
+      </div>
+      <div class="form-row">
+        <button type="submit" class="btn-add-flight">Add Flight</button>
+      </div>
+    </form>
+  </section>
+  <section>
+    <h2>Flight List</h2>
+    <table id="flights-body">
+      <thead>
+        <tr>
+          <th>Airline</th>
+          <th>Flight Number</th>
+          <th>Origin</th>
+          <th>Destination</th>
+          <th>Departure Time</th>
+          <th>Arrival Time</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Flight rows will be dynamically added here -->
+        <tr data-flight-id="flight_id">
+          <td class="editable">Airline Name</td>
+          <td class="editable">Flight Number</td>
+          <td class="editable">Origin</td>
+          <td class="editable">Destination</td>
+          <td class="editable">Departure Time</td>
+          <td class="editable">Arrival Time</td>
+          <td>
+            <button class="btn-delete-flight" onclick="deleteFlight('flight_id')">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+  <section>
+    <button class="btn-search-page" onclick="redirectToSearchPage()">Search for Flights</button>
+  </section>
+  <script>
+    function redirectToSearchPage() {
+      window.location.href = "search.html";
+    }
+  </script>
+</body>
+
+</html>
+

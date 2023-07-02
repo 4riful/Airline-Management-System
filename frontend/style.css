@@ -1,0 +1,181 @@
+/* Global Styles */
+body {
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Flight Form Styles */
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-row {
+  margin-bottom: 20px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+label {
+  flex-basis: 120px;
+  margin-right: 10px;
+  font-weight: bold;
+  color: #555;
+}
+
+input[type='text'],
+input[type='datetime-local'] {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'JetBrains Mono', monospace;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Flight Table Styles */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+th,
+td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  color: #555;
+}
+
+th {
+  background-color: #f7f7f7;
+}
+
+.actions {
+  display: flex;
+  justify-content: center;
+}
+
+.actions button {
+  margin: 0 5px;
+}
+/* Style for the search section */
+section {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+/* Style for the search form */
+#search-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.form-row {
+  margin-bottom: 10px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+label {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+input[type="text"] {
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  form {
+    max-width: 100%;
+  }
+
+  label {
+    flex-basis: 100%;
+    margin-right: 0;
+    margin-bottom: 5px;
+  }
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .btn-search-flight {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  input[type='text'],
+  input[type='datetime-local'] {
+    width: 100%;
+  }
+}
+
