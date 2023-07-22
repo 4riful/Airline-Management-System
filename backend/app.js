@@ -6,7 +6,7 @@ const pool = mysql.createPool({
   connectionLimit: 10,
   host: 'localhost',
   user: 'root',
-  password: 'anik2442',
+  password: 'writepasshere',
   database: 'flight_app',
 });
 const bodyParser = require('body-parser');
